@@ -1,0 +1,32 @@
+{
+  "name": "ac-io",
+  "version": "1.0.0",
+  "description": "Module for anti-captcha easy management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UltraShock98/ac-io.git"
+  },
+"dependencies": {
+    "bluebird": "^3.3.1",
+    "request-promise": "^2.0.0",
+  },
+ "keywords": [
+    "node",
+    "api",
+    "anti",
+    "captcha",
+    "promise",
+    "antigate",
+    "rucaptcha"
+  ],
+  "author": "https://vk.com/id195624402",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UltraShock98/ac-io/issues"
+  },
+  "homepage": "https://github.com/UltraShock98/ac-io#readme"
+}
