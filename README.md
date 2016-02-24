@@ -4,6 +4,7 @@
 
 ## npm зависимости
 * bluebird
+* merge-util
 * request-promise
 
 ## Использование
