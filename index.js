@@ -5,6 +5,7 @@ base = new (require('base-io')),
 path = require('path');
 
 base
+.root(__dirname)
 .import(function(){
 	this.settings = {
 		dir: path.normalize(__dirname+'/temp/'),
