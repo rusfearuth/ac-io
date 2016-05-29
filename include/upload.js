@@ -3,29 +3,21 @@
 /**
  * Обрабатывает данные отправки капчи
  * @param   {string} resp ответ сервера
- *                      
+ *
  * @returns {object} promise
  */
 exports.upload = function(resp){
-	/* Возвращаем promise */
 	return new this.promise((resolve,reject) => {
-		/* Получаем код капчи если есть */
 		var id = resp.split('|');
 
-		/* Проверяем код на существование */
 		if (id[0] === 'OK') {
-			/* Возвращаем код капчи */
 			resolve(id[1]);
 		} else {
-			/* Объект для возвращения ошибки */
 			var error = {
-				/* Если нету определения */
 				name: 'unknown.error',
-				/* Возвращаем */
 				body: resp
 			};
 
-			/* Обрабатываем остальные сообщения */
 			switch (resp) {
 				case 'ERROR_WRONG_USER_KEY':
 					error.name = 'wrong.user.key';

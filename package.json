@@ -1,6 +1,6 @@
 {
   "name": "ac-io",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Module for anti-captcha easy management.",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,9 @@
     "url": "git+https://github.com/UltraShock98/ac-io.git"
   },
 "dependencies": {
-    "bluebird": "^3.3.1",
-    "request-promise": "^2.0.0"
+	"base-io": "^1.0.1",
+    "bluebird": "^3.4.0",
+    "request-promise": "^3.0.0"
   },
  "keywords": [
     "node",
